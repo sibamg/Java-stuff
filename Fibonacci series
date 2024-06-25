@@ -1,0 +1,26 @@
+
+import java.io.*;
+class M{
+    public static void main(String args[])throws IOException {
+       int n;
+       BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+       System.out.println("How many numbers of the fibonacci series do you desire?");
+       n=Integer.parseInt(br.readLine());
+       
+       for(int i=0;i<n;i++){
+           System.out.println("Element number:"+i+" of the fibonacci series is "+fibo(i));
+       }
+    }
+    static int fibo(int n){
+    
+    if(n==0){
+        return 0;
+    }
+    else if(n==1){
+        return 1;
+    }
+    else{
+        return(fibo(n-1)+fibo(n-2));
+    }
+    }
+}
