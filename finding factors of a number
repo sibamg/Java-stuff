@@ -1,0 +1,16 @@
+import java.io.*;
+class BubbleSort{
+    public static void main(String args[])throws IOException{
+      int n;
+       BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+       System.out.println("Enter the number to find factors for");
+       n=Integer.parseInt(br.readLine());
+       System.out.println("Factors of "+n+" are-");
+       for(int i=1;i<=n;i++){
+           if(n%i==0){
+               System.out.println(i);
+           }
+       }
+    }
+   
+}
