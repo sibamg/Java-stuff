@@ -1,0 +1,17 @@
+
+import java.util.Scanner;
+class M{
+    public static void main(String args[]) {
+       int n;
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter number to find factorial of");
+       n=sc.nextInt();
+       long f=factorial(n);
+       System.out.print("Factorial of "+n+"\tis\t"+f);
+    }
+    static long factorial(int n){
+    if(n==1 || n==0)
+    return 1;
+    return(n*factorial(n-1));
+    }
+}
