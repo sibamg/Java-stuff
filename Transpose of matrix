@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class transpose{
+    public static void main(String args[]){
+        int r,c;
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter number of rows-");
+        r=sc.nextInt();
+          System.out.print("Enter number of columns-");
+        c=sc.nextInt();
+        int arr[][]=new int[r][c];
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                  System.out.printf("arr[%d][%d]-",i,j);
+                arr[i][j]=sc.nextInt();
+            }
+        }
+        System.out.println("normal matrix-");
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                System.out.print(arr[i][j]+"\t");
+            }
+            System.out.println();
+        }
+        System.out.println("Transpose of matrix-");
+         for(int i=0;i<c;i++){
+            for(int j=0;j<r;j++){
+                System.out.print(arr[j][i]+"\t");
+            }
+            System.out.println();
+        }
+    }
+}
