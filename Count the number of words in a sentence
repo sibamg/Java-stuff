@@ -1,0 +1,16 @@
+import java.io.*;
+class Count{
+    public static void main(String args[])throws IOException{
+        String s;
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter a sentence");
+        s=br.readLine();
+        System.out.println("the given sentence has "+countWords(s));
+        
+    }
+    static int countWords(String s){
+        String arr[]=s.split(" ");
+        return arr.length;
+        
+    }
+}
